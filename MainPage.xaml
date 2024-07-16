@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="ExpandCollapse.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExpandCollapse"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid" 
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <local:ViewModel />
+    </Page.DataContext>
+    <Page.Resources>
+
+    </Page.Resources>
+    <Grid>
+        <syncfusion:SfTreeGrid     x:Name="treeGrid"  
+                                   ItemsSource="{Binding Employees}" 
+                                   AutoGenerateColumns="False"                                   
+                                   ParentPropertyName="ID"    
+                                   ChildPropertyName="ReportsTo"
+                                   SelfRelationRootValue="-1"
+                                   AllowEditing="True">
+            <syncfusion:SfTreeGrid.Columns>
+                <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="Firs tName" />
+                <syncfusion:TreeGridTextColumn  MappingName="LastName"  HeaderText="Last Name" />
+                <syncfusion:TreeGridNumericColumn MappingName="ID"  HeaderText="ID"/>
+                <syncfusion:TreeGridTextColumn  MappingName="Title"  HeaderText="Title" />
+                <syncfusion:TreeGridNumericColumn  MappingName="ReportsTo"  HeaderText="Reports To" />
+            </syncfusion:SfTreeGrid.Columns>
+        </syncfusion:SfTreeGrid>
+    </Grid>
+</Page>
