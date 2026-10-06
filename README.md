@@ -1,8 +1,8 @@
-# How to expand or collapse the UWP TreeGrid (SfTreeGrid) by clicking any cell in the row
+# How to expand or collapse the UWP Tree Grid by clicking any cell in the row
 
 This sample demonstrates how to expand or collapse nodes in the [UWP TreeGrid](https://www.syncfusion.com/uwp-ui-controls/treegrid) by clicking any cell in the row instead of using only the expander icon.
 
-By default, tree nodes in the UWP TreeGrid expand or collapse only when the expander icon is clicked. With the customization below, the node state is toggled whenever the user taps any cell in the row.
+By default, tree nodes in the UWP Tree Grid expand or collapse only when the expander icon is clicked. With the customization below, the node state is toggled whenever the user taps any cell in the row.
 
 ## C#
 
@@ -41,6 +41,6 @@ public class TreeGridSelectionControllerExt : TreeGridRowSelectionController
 
 **Conclusion**
 
-This sample shows how to customize the UWP TreeGrid so that users can expand or collapse a node by clicking any cell in the row. This provides a more intuitive and user-friendly interaction model.
+This sample shows how to customize the UWP Tree Grid so that users can expand or collapse a node by clicking any cell in the row. This provides a more intuitive and user-friendly interaction model.
 
 If you have any queries or require clarifications, please let us know in the comments section below. You can also contact us through our [support forums](https://www.syncfusion.com/forums).
